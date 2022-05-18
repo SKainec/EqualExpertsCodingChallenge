@@ -1,0 +1,17 @@
+import expect from 'expect';
+import { describe, it } from 'jest-circus';
+import mathHelpers from '../../components/helpers/mathHelper';
+
+describe('Math Helpers', () => {
+    test('Rounding a value removes trailing decimals', () => {
+        var value = mathHelpers.roundCurrency(3.2222);
+
+        expect(value).toBe(3.22);
+    });
+
+    test('Rounding a value rounds up if thousandths place is >= 5', () => {
+        var value = mathHelpers.roundCurrency(3.225);
+
+        expect(value).toBe(3.23);
+    });
+});

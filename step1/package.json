@@ -1,0 +1,16 @@
+{
+  "name": "step1",
+  "version": "1.0.0",
+  "description": "Shopping cart problem for equal experts.",
+  "main": "/src/index.js",
+  "scripts": {
+    "test": "jest --testPathPattern ./src/tests/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.17.12",
+    "jest": "^28.1.0"
+  }
+}
